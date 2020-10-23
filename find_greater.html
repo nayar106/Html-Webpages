@@ -1,0 +1,36 @@
+<html>
+<head>
+<style type="text/css">
+.a{
+    margin:10px 0px 20px 15px;
+    
+}
+</style>
+<script type="text/javascript">
+function fun(){
+if(document.frm.txt1.value>document.frm.txt2.value)
+{
+  document.frm.txt3.value=document.frm.txt1.value;
+}
+else if(document.frm.txt1.value<document.frm.txt2.value)
+{
+  document.frm.txt3.value=document.frm.txt2.value;
+}
+else if(document.frm.txt1.value=document.frm.txt2.value)
+{
+  document.frm.txt3.value="both are equal";
+}
+}
+</script>
+</head>
+<body >
+<form name="frm">
+<div  style="background-color:#CCE1DC;height:250px;width:500px;border:2px solid blue;margin-left:450px;text-align:center;">
+Enter First Number<input class="a" name="txt1" type="text"><br>
+Enter Second Number<input class="a" name="txt2" type="text"><br>
+ Largest Number<input class="a" name="txt3" type="text"><br>
+<input type="button" value="Find Greater" onclick="fun();">
+</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<html>
+<head>
+<style type="text/css">
+.a{
+   margin-top:10px;
+   padding:10px 10px 10px 10px;
+
+}
+.b{
+   padding:10px 30px 10px 30px;
+   margin:10px;
+   }
+</style>
+<script type="text/javascript">
+function add(){
+ a= parseInt(document.frm.txt1.value);
+ b= parseInt(document.frm.txt2.value);
+ document.frm.txt3.value=a+b;
+}
+function sub(){
+ a= parseInt(document.frm.txt1.value);
+ b= parseInt(document.frm.txt2.value);
+ document.frm.txt3.value=a-b;
+}
+function mul(){
+ a= parseInt(document.frm.txt1.value);
+ b= parseInt(document.frm.txt2.value);
+ document.frm.txt3.value=a*b;
+}
+function div(){
+ a= parseInt(document.frm.txt1.value);
+ b= parseInt(document.frm.txt2.value);
+ document.frm.txt3.value=a/b;
+}
+function del(){
+document.frm.txt1.value=" ";
+document.frm.txt2.value=" ";
+document.frm.txt3.value=" ";
+}
+</script>
+</head>
+<body align="center">
+<div style="background-color:#CCE1DC;border:3px solid blue;height:400;width:400;margin-left:450px;"><div>
+<form name="frm">
+ <input class="a" type="text" name="txt1" placeholder="Enter First Number" ><br><br>
+ <input class="a" type="text" name="txt2" placeholder="Enter Second Number" ><br><br>
+ <input class="a" type="text" name="txt3" placeholder="Result" ><br><br>
+ <input class="b" type="button" value="+" onclick="add();" >
+  <input class="b" type="button" value="-" onclick="sub();"><br>
+  <input class="b" type="button" value="*" onclick="mul();">
+   <input class="b" type="button" value="/" onclick="div();"> <br>
+   <input class="b" type="button" value="Clear" onclick="del();"> 
+ </form>
+ </body>
+  </html>

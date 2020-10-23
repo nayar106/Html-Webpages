@@ -1,0 +1,25 @@
+<html>
+<head>
+<script type="text/javascript">
+function change(n){
+if(n.value=="RED")
+ document.bgColor="red";
+else if(n.value=="BLUE")
+ document.bgColor="blue";
+else if(n.value=="GREEN")
+ document.bgColor="green";
+else if(n.value=="YELLOW")
+ document.bgColor="yellow";
+else if(n.value=="GRAY")
+ document.bgColor="gray";
+}
+</script>
+</head>
+<body>
+<input type="button" value="RED" onclick="change(this);">
+<input type="button" value="BLUE" onclick="change(this);">
+<input type="button" value="GREEN"onclick="change(this);">
+<input type="button" value="YELLOW" onclick="change(this);">
+<input type="button" value="GRAY" onclick="change(this);">
+</body>
+</html>
